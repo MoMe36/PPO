@@ -14,3 +14,14 @@ I'm planning to power up the implementation, but, in order to have full control 
 * Observation of more values (currently tensorboard only receives informations about rewards). I wanna add Policy loss, entropy, entropy loss, value loss... 
 * A simpler implementation that I wanna make myself. 
 
+## Requierments 
+
+I've been testing and using this algorithm on a custom environment I created. You can find it here(add link ! )
+
+In any case, you'll need: 
+
+* OpenAI baselines 
+* Gym 
+* Numpy 
+* PyTorch 
+* TensorBoardX
