@@ -117,6 +117,9 @@ def main():
         rollouts.compute_returns(next_value, args.use_gae, args.gamma, args.tau)
 
         value_loss, action_loss, dist_entropy = agent.update(rollouts)
+        writer.add_scalar('Agents metrics/Policy loss',action_loss,j)
+        writer.add_scalar('Agents metrics/Value loss',value_loss,j)
+        writer.add_scalar('Agents metrics/Entropy loss',dist_entropy,j)
 
         rollouts.after_update()
 
