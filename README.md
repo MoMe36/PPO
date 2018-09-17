@@ -2,6 +2,9 @@
 
 This repo contains an implementation of Proximal Policy Optimization. It is a minimal version of [Ilya Kostrikov's](https://github.com/ikostrikov/pytorch-a2c-ppo-acktr) work, which in turn is depends heavily on [OpenAI baselines](https://github.com/openai/baselines) and is free of Visdom, relying rather on Tensorboard to display results. 
 
+
+![Results on mreacher-v0](/tb_ppo.png)
+
 ## In what aspects is it minimal ? 
 
 I'm planning to power up the implementation, but, in order to have full control over all aspects, I took the liberty to remove some unecessary aspects while I'm trying to understand it all. In particular: 
